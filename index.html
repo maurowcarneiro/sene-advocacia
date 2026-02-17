@@ -6,80 +6,49 @@
 
 <title>Advogada em Ribeirão Preto | Sene Advocacia e Consultoria</title>
 
-<meta name="description" content="Advogada em Ribeirão Preto/SP. Escritório de advocacia com atuação estratégica nos estados de São Paulo, Goiás e Alagoas. Especialização em recursos em segunda instância, petições estratégicas e consultoria jurídica personalizada.">
-
-<meta name="keywords" content="Advogada em Ribeirão Preto, Escritório de Advocacia Ribeirão Preto, Recursos Segunda Instância, Petições Estratégicas, Advocacia São Paulo, Advocacia Goiás, Advocacia Alagoas">
-
-<meta name="author" content="Sene Advocacia e Consultoria">
-<meta name="robots" content="index, follow">
-<meta name="geo.region" content="BR-SP">
-<meta name="geo.placename" content="Ribeirão Preto">
-<link rel="canonical" href="https://www.seusite.com.br/">
+<meta name="description" content="Advogada em Ribeirão Preto/SP. Escritório de advocacia com atuação estratégica nos estados de São Paulo, Goiás e Alagoas. Especialização em recursos em segunda instância e consultoria jurídica personalizada.">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
-<!-- Open Graph -->
-<meta property="og:title" content="Advogada em Ribeirão Preto | Sene Advocacia">
-<meta property="og:description" content="Escritório de advocacia em Ribeirão Preto/SP com atuação estratégica em SP, GO e AL.">
-<meta property="og:type" content="website">
-
-<!-- Schema para Google -->
-<script type="application/ld+json">
-{
- "@context": "https://schema.org",
- "@type": "LegalService",
- "name": "Sene Advocacia e Consultoria",
- "address": {
-   "@type": "PostalAddress",
-   "addressLocality": "Ribeirão Preto",
-   "addressRegion": "SP",
-   "addressCountry": "BR"
- },
- "areaServed": ["São Paulo","Goiás","Alagoas"],
- "description": "Escritório de advocacia em Ribeirão Preto/SP com atuação estratégica nos estados de São Paulo, Goiás e Alagoas.",
- "telephone": "+55-82-98167-803"
-}
-</script>
-
 <style>
 
+/* FUNDO INSTITUCIONAL SOFISTICADO */
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background-color: #f4f2ee;
-    color: #1b1b1b;
+    background: linear-gradient(135deg, #0c1624, #1a2a44);
+    color: #eaeaea;
 }
 
 /* HEADER PREMIUM */
 header {
-    background: #0c1624;
-    padding: 40px 0 30px 0;
     text-align: center;
-    color: #c6a85b;
+    padding: 50px 20px 35px;
+    background: rgba(0,0,0,0.3);
+    backdrop-filter: blur(4px);
 }
 
 header h1 {
     font-family: 'Playfair Display', serif;
     margin: 0;
-    letter-spacing: 1px;
-    font-size: 32px;
+    font-size: 34px;
+    color: #d4af37;
 }
 
 .oab-destaque {
-    margin-top: 15px;
+    margin-top: 18px;
     display: inline-block;
-    padding: 8px 22px;
-    border: 1px solid #c6a85b;
-    color: #c6a85b;
+    padding: 10px 28px;
+    border: 1px solid #d4af37;
+    color: #d4af37;
     font-size: 13px;
     letter-spacing: 3px;
     font-weight: 600;
-    text-transform: uppercase;
 }
 
 header p {
     margin-top: 15px;
-    color: #d4c7a1;
+    color: #cfcfcf;
     font-size: 14px;
     letter-spacing: 1px;
 }
@@ -99,43 +68,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #c6a85b;
-}
-
-.hero {
-    background: linear-gradient(rgba(12,22,36,0.88), rgba(12,22,36,0.88)),
-                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
-    background-size: cover;
-    background-position: center;
-    color: white;
-    text-align: center;
-    padding: 180px 20px;
-}
-
-.hero h1 {
-    font-family: 'Playfair Display', serif;
-    font-size: 46px;
-    color: #c6a85b;
-}
-
-.hero p {
-    max-width: 700px;
-    margin: 20px auto;
-    font-size: 18px;
-}
-
-.button {
-    background: #c6a85b;
-    color: #0c1624;
-    padding: 16px 32px;
-    text-decoration: none;
-    font-weight: 600;
-    border-radius: 2px;
-    transition: 0.3s;
-}
-
-.button:hover {
-    background: #b69445;
+    color: #d4af37;
 }
 
 section {
@@ -145,8 +78,8 @@ section {
 h2 {
     font-family: 'Playfair Display', serif;
     font-size: 30px;
-    color: #0c1624;
-    border-bottom: 2px solid #c6a85b;
+    color: #d4af37;
+    border-bottom: 2px solid #d4af37;
     display: inline-block;
     padding-bottom: 8px;
 }
@@ -159,51 +92,51 @@ h2 {
 
 .card {
     flex: 1;
-    background: white;
+    background: rgba(255,255,255,0.05);
     padding: 40px;
-    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
-    border-top: 3px solid #c6a85b;
+    border: 1px solid rgba(212,175,55,0.3);
     transition: 0.4s;
 }
 
 .card:hover {
-    transform: translateY(-8px);
+    transform: translateY(-6px);
+    border-color: #d4af37;
 }
 
-/* MAPA */
+/* MAPA PREMIUM */
 .mapa {
-    margin-top: 60px;
+    margin-top: 70px;
     text-align: center;
 }
 
 .mapa svg {
-    max-width: 400px;
+    width: 100%;
+    max-width: 650px;
 }
 
-.estado {
-    fill: #d9d9d9;
+/* Contorno Brasil */
+.brasil {
+    fill: #1e2d4a;
+    stroke: #555;
+    stroke-width: 1;
 }
 
+/* Estados destaque */
 .destaque {
-    fill: #c6a85b;
+    fill: #d4af37;
 }
 
 footer {
     background: #0c1624;
-    color: white;
     text-align: center;
     padding: 40px;
+    font-size: 14px;
+    color: #aaa;
 }
 
 @media (max-width: 900px) {
     .cards {
         flex-direction: column;
-    }
-    section {
-        padding: 80px 8%;
-    }
-    .hero h1 {
-        font-size: 32px;
     }
 }
 
@@ -219,51 +152,13 @@ footer {
 </header>
 
 <nav>
-<a href="#inicio">Início</a>
-<a href="#sobre">Sobre</a>
-<a href="#especialidades">Especialidades</a>
 <a href="#presenca">Presença Nacional</a>
-<a href="#seo-local">Advogada em Ribeirão Preto</a>
+<a href="#seo">Advogada em Ribeirão Preto</a>
 <a href="#contato">Contato</a>
 </nav>
 
-<section class="hero" id="inicio">
-<h1>Advogada em Ribeirão Preto com Atuação Estratégica Nacional</h1>
-<p>Atuação estruturada nos estados de Alagoas, Goiás e São Paulo, oferecendo soluções jurídicas com excelência técnica e comprometimento institucional.</p>
-<br>
-<a class="button" href="https://wa.me/558298167803?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Agendar Consulta</a>
-</section>
-
-<section id="sobre">
-<h2>Sobre o Escritório</h2>
-<p>Sene Advocacia e Consultoria atua de forma estratégica e personalizada, com abordagem técnica aprofundada e planejamento processual orientado a resultados.</p>
-<p>Liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272.</p>
-</section>
-
-<section id="especialidades">
-<h2>Especialidades</h2>
-
-<div class="cards">
-<div class="card">
-<h3>Petições Estratégicas</h3>
-<p>Construção argumentativa sólida e técnica de alto nível.</p>
-</div>
-
-<div class="card">
-<h3>Recursos em Segunda Instância</h3>
-<p>Estratégia jurídica estruturada com foco em reversão e consistência.</p>
-</div>
-
-<div class="card">
-<h3>Consultoria Especializada</h3>
-<p>Planejamento preventivo e mitigação de riscos jurídicos.</p>
-</div>
-</div>
-</section>
-
 <section id="presenca">
 <h2>Presença Estratégica Nacional</h2>
-<p>Atuação institucional consolidada nos seguintes estados:</p>
 
 <div class="cards">
 <div class="card"><h3>Alagoas</h3></div>
@@ -272,25 +167,36 @@ footer {
 </div>
 
 <div class="mapa">
-<svg viewBox="0 0 600 600">
-<path class="estado destaque" d="M350,250 L390,250 L400,280 L360,290 Z" />
-<path class="estado destaque" d="M450,320 L480,320 L490,350 L460,360 Z" />
-<path class="estado destaque" d="M520,200 L550,200 L560,230 L530,240 Z" />
+
+<svg viewBox="0 0 800 800">
+
+<!-- Contorno simplificado do Brasil -->
+<path class="brasil" d="M200,200 L600,180 L650,400 L550,650 L300,700 L150,500 Z" />
+
+<!-- Goiás -->
+<circle class="destaque" cx="430" cy="420" r="20"/>
+
+<!-- São Paulo -->
+<circle class="destaque" cx="520" cy="520" r="20"/>
+
+<!-- Alagoas -->
+<circle class="destaque" cx="610" cy="350" r="18"/>
+
 </svg>
+
 </div>
 </section>
 
-<section id="seo-local">
+<section id="seo">
 <h2>Advogada em Ribeirão Preto/SP</h2>
 
 <p><strong>Sene Advocacia e Consultoria</strong> é escritório de advocacia em Ribeirão Preto/SP 
 com atuação estratégica nos estados de São Paulo, Goiás e Alagoas.</p>
 
-<p>Especialização em recursos em segunda instância, petições estratégicas e planejamento jurídico de alta performance, 
-com atendimento personalizado e atuação técnica aprofundada.</p>
+<p>Especialização em recursos em segunda instância, petições estratégicas e planejamento jurídico de alta performance.</p>
 
-<p>Se você busca <strong>advogada em Ribeirão Preto</strong> com atuação técnica estruturada e estratégia jurídica diferenciada, 
-o escritório oferece suporte jurídico de alto nível com atendimento personalizado.</p>
+<p>Se você procura <strong>advogada em Ribeirão Preto</strong> com atuação técnica aprofundada e estratégia jurídica diferenciada, oferecemos atendimento personalizado e institucional.</p>
+
 </section>
 
 <section id="contato">
@@ -301,11 +207,12 @@ o escritório oferece suporte jurídico de alto nível com atendimento personali
 </section>
 
 <footer>
-<p>© 2026 Sene Advocacia e Consultoria – Todos os direitos reservados.</p>
+© 2026 Sene Advocacia e Consultoria – Todos os direitos reservados.
 </footer>
 
 </body>
 </html>
+
 
 
 
