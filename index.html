@@ -1,309 +1,224 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sene Advocacia & Consultoria</title>
 
-<title>Advogada em Ribeirão Preto | Sene Advocacia e Consultoria</title>
+  <!-- SEO -->
+  <meta name="description" content="Sene Advocacia & Consultoria atua com excelência jurídica e visão estratégica, oferecendo soluções personalizadas em todo o Brasil.">
+  <meta name="keywords" content="advocacia, consultoria jurídica, direito empresarial, direito civil, direito trabalhista">
+  <meta name="author" content="Sene Advocacia & Consultoria">
 
-<meta name="description" content="Advogada em Ribeirão Preto/SP. Escritório com atuação estratégica em São Paulo, Goiás e Alagoas. Especialização em recursos e consultoria jurídica personalizada.">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-<style>
+    body {
+      font-family: 'Inter', sans-serif;
+      color: #222;
+      line-height: 1.7;
+      background-color: #ffffff;
+    }
 
-body{
-margin:0;
-font-family:'Inter',sans-serif;
-background:#f4f2ee;
-color:#1b1b1b;
-}
+    header {
+      min-height: 100vh;
+      background: linear-gradient(
+        rgba(0,0,0,0.55),
+        rgba(0,0,0,0.55)
+      ),
+      url("https://images.unsplash.com/photo-1528740561666-dc2479dc08ab") center/cover no-repeat;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 40px 20px;
+    }
 
-header{
-background:#0c1624;
-padding:40px 0 30px 0;
-text-align:center;
-color:#c6a85b;
-}
+    header h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 3rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
 
-header h1{
-font-family:'Playfair Display',serif;
-margin:0;
-font-size:32px;
-}
+    header p {
+      max-width: 760px;
+      margin: auto;
+      font-size: 1.2rem;
+      opacity: 0.95;
+    }
 
-.oab-destaque{
-margin-top:15px;
-display:inline-block;
-padding:8px 22px;
-border:1px solid #c6a85b;
-color:#c6a85b;
-font-size:13px;
-letter-spacing:3px;
-font-weight:600;
-text-transform:uppercase;
-}
+    section {
+      padding: 80px 20px;
+    }
 
-header p{
-margin-top:15px;
-color:#d4c7a1;
-font-size:14px;
-}
+    .container {
+      max-width: 1100px;
+      margin: auto;
+    }
 
-nav{
-background:#0f1f34;
-text-align:center;
-padding:18px;
-}
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.3rem;
+      margin-bottom: 25px;
+      color: #111;
+    }
 
-nav a{
-color:white;
-margin:0 25px;
-text-decoration:none;
-font-weight:500;
-}
+    .divider {
+      width: 70px;
+      height: 3px;
+      background-color: #8b0000;
+      margin-bottom: 35px;
+    }
 
-nav a:hover{
-color:#c6a85b;
-}
+    .sobre p {
+      max-width: 900px;
+      margin-bottom: 20px;
+      font-size: 1.05rem;
+    }
 
-.hero{
-background:linear-gradient(rgba(12,22,36,0.88),rgba(12,22,36,0.88)),
-url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
-background-size:cover;
-background-position:center;
-color:white;
-text-align:center;
-padding:180px 20px;
-}
+    .especialidades {
+      background-color: #f6f6f6;
+    }
 
-.hero h1{
-font-family:'Playfair Display',serif;
-font-size:46px;
-color:#c6a85b;
-}
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
 
-.hero p{
-max-width:700px;
-margin:20px auto;
-font-size:18px;
-}
+    .card {
+      background: #fff;
+      padding: 35px;
+      border-left: 5px solid #8b0000;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
 
-.button{
-background:#c6a85b;
-color:#0c1624;
-padding:16px 32px;
-text-decoration:none;
-font-weight:600;
-}
+    .card h3 {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+    }
 
-section{
-padding:110px 12%;
-}
+    .presenca {
+      background: linear-gradient(180deg, #ffffff, #f2f2f2);
+      text-align: center;
+    }
 
-h2{
-font-family:'Playfair Display',serif;
-font-size:30px;
-color:#0c1624;
-border-bottom:2px solid #c6a85b;
-display:inline-block;
-padding-bottom:8px;
-}
+    .presenca p {
+      max-width: 850px;
+      margin: auto;
+      font-size: 1.1rem;
+    }
 
-.cards{
-display:flex;
-gap:40px;
-margin-top:50px;
-flex-wrap:wrap;
-}
+    footer {
+      background-color: #111;
+      color: #eee;
+      padding: 50px 20px;
+      text-align: center;
+    }
 
-.card{
-flex:1;
-min-width:250px;
-background:white;
-padding:40px;
-box-shadow:0 15px 40px rgba(0,0,0,0.08);
-border-top:3px solid #c6a85b;
-}
-
-#presenca{
-background:linear-gradient(to bottom,#ebe6dd,#e2dbcf);
-}
-
-.mapa{
-margin-top:60px;
-text-align:center;
-}
-
-.mapa svg{
-width:450px;
-max-width:100%;
-}
-
-.brasil{
-fill:#d9d9d9;
-stroke:#8c8c8c;
-stroke-width:2;
-}
-
-.destaque{
-fill:#c6a85b;
-}
-
-.texto-final{
-margin-top:70px;
-max-width:850px;
-font-size:18px;
-line-height:1.8;
-}
-
-footer{
-background:#0c1624;
-color:white;
-text-align:center;
-padding:40px;
-}
-
-@media(max-width:900px){
-.cards{flex-direction:column;}
-.hero h1{font-size:32px;}
-}
-
-</style>
+    footer p {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  </style>
 </head>
 
 <body>
 
-<header>
-<h1>Sene Advocacia e Consultoria</h1>
-<div class="oab-destaque">OAB/GO 76.272 • Advocacia Nacional</div>
-<p>Excelência Técnica | Estratégia Jurídica | Alta Performance Processual</p>
-</header>
+  <!-- HERO -->
+  <header>
+    <div>
+      <h1>Sene Advocacia & Consultoria</h1>
+      <p>
+        Excelência jurídica aliada à visão estratégica, oferecendo soluções
+        personalizadas para pessoas físicas e jurídicas em todo o território nacional.
+      </p>
+    </div>
+  </header>
 
-<nav>
-<a href="#inicio">Início</a>
-<a href="#sobre">Sobre</a>
-<a href="#especialidades">Especialidades</a>
-<a href="#presenca">Presença Nacional</a>
-<a href="#seo-local">Advogada em Ribeirão Preto</a>
-<a href="#contato">Contato</a>
-</nav>
+  <!-- SOBRE -->
+  <section class="sobre">
+    <div class="container">
+      <h2>O Escritório</h2>
+      <div class="divider"></div>
+      <p>
+        O Sene Advocacia & Consultoria nasceu com o propósito de oferecer uma advocacia
+        moderna, técnica e comprometida com resultados concretos. Atuamos de forma
+        estratégica, preventiva e contenciosa, sempre com foco na segurança jurídica
+        e na tomada de decisões conscientes.
+      </p>
+      <p>
+        Nosso trabalho é pautado pela ética, transparência e confidencialidade,
+        mantendo uma relação próxima e personalizada com cada cliente.
+        Entendemos que cada caso possui particularidades únicas e exige soluções sob medida.
+      </p>
+    </div>
+  </section>
 
-<section class="hero" id="inicio">
-<h1>Advogada em Ribeirão Preto com Atuação Estratégica Nacional</h1>
-<p>Atuação estruturada nos estados de São Paulo, Goiás e Alagoas.</p>
-<br>
-<a class="button" href="https://wa.me/558298167803">Agendar Consulta</a>
-</section>
+  <!-- ESPECIALIDADES -->
+  <section class="especialidades">
+    <div class="container">
+      <h2>Áreas de Atuação</h2>
+      <div class="divider"></div>
 
-<section id="sobre">
-<h2>Sobre o Escritório</h2>
-<p>
-Sene Advocacia e Consultoria atua com abordagem estratégica e personalizada,
-priorizando técnica, organização processual e visão sistêmica.
-O escritório trabalha com análise aprofundada de cada caso,
-estruturação recursal e acompanhamento contínuo.
-</p>
-</section>
+      <div class="cards">
+        <div class="card">
+          <h3>Direito Civil</h3>
+          <p>Atuação em contratos, responsabilidade civil, obrigações e demandas patrimoniais.</p>
+        </div>
 
-<section id="especialidades">
-<h2>Especialidades</h2>
-<div class="cards">
-<div class="card">
-<h3>Recursos em Segunda Instância</h3>
-<p>Elaboração técnica de recursos com estratégia argumentativa sólida.</p>
-</div>
+        <div class="card">
+          <h3>Direito Empresarial</h3>
+          <p>Assessoria jurídica estratégica para empresas, societário e governança.</p>
+        </div>
 
-<div class="card">
-<h3>Consultoria Jurídica Estratégica</h3>
-<p>Orientação preventiva e análise de riscos jurídicos.</p>
-</div>
+        <div class="card">
+          <h3>Direito Trabalhista</h3>
+          <p>Consultoria preventiva e contenciosa nas relações de trabalho.</p>
+        </div>
 
-<div class="card">
-<h3>Atuação Interestadual</h3>
-<p>Estrutura organizada para atendimento eficiente em múltiplos estados.</p>
-</div>
-</div>
-</section>
+        <div class="card">
+          <h3>Consultoria Jurídica</h3>
+          <p>Planejamento jurídico, análise de riscos e suporte à tomada de decisões.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<section id="presenca">
-<h2>Presença Estratégica Nacional</h2>
+  <!-- PRESENÇA NACIONAL -->
+  <section class="presenca">
+    <div class="container">
+      <h2>Presença Nacional</h2>
+      <div class="divider"></div>
+      <p>
+        Com atuação estratégica em diferentes regiões do país, o Sene Advocacia & Consultoria
+        oferece atendimento jurídico em âmbito nacional, utilizando recursos tecnológicos
+        e parcerias especializadas para garantir eficiência, proximidade e agilidade
+        na condução dos casos.
+      </p>
+    </div>
+  </section>
 
-<div class="mapa" style="text-align:center; margin-top:50px;">
+  <!-- RODAPÉ -->
+  <footer>
+    <p>
+      © 2026 Sene Advocacia & Consultoria — Todos os direitos reservados.
+    </p>
+  </footer>
 
-<svg viewBox="0 0 600 600"
-     style="width:750px; max-width:100%; height:auto;">
-
-  <!-- Norte -->
-  <path d="M230 70 L310 60 L360 90 L350 140 L300 160 L250 140 Z" fill="#e5e2db" stroke="#999"/>
-
-  <!-- Nordeste -->
-  <path d="M360 90 L420 130 L450 180 L420 220 L380 200 L350 140 Z" fill="#e5e2db" stroke="#999"/>
-
-  <!-- Centro-Oeste -->
-  <path d="M250 140 L300 160 L330 230 L290 260 L240 230 Z" fill="#e5e2db" stroke="#999"/>
-
-  <!-- Sudeste -->
-  <path d="M330 230 L390 260 L370 310 L320 300 L290 260 Z" fill="#e5e2db" stroke="#999"/>
-
-  <!-- Sul -->
-  <path d="M320 300 L370 310 L350 370 L300 350 Z" fill="#e5e2db" stroke="#999"/>
-
-  <!-- Destaques -->
-
-  <!-- São Paulo -->
-  <circle cx="350" cy="285" r="8" fill="#c6a85b"/>
-
-  <!-- Goiás -->
-  <circle cx="285" cy="210" r="8" fill="#c6a85b"/>
-
-  <!-- Alagoas -->
-  <circle cx="410" cy="190" r="8" fill="#c6a85b"/>
-
-</svg>
-
-</div>
-
-
-
-
-
-<div class="texto-final">
-<p>
-A presença estruturada nos estados de São Paulo, Goiás e Alagoas
-permite atendimento técnico qualificado, com acompanhamento processual
-seguro e estratégia jurídica consistente.
-</p>
-<p>
-A advocacia exercida pelo escritório combina excelência técnica,
-visão analítica e comprometimento com resultados.
-</p>
-</div>
-
-</section>
-
-<section id="seo-local">
-<h2>Advogada em Ribeirão Preto</h2>
-<p>
-Se você busca advogada em Ribeirão Preto com atuação estratégica,
-estrutura organizada e acompanhamento técnico qualificado,
-entre em contato para agendamento de consulta.
-</p>
-</section>
-
-<footer>
-<p>© 2026 Sene Advocacia e Consultoria – Todos os direitos reservados.</p>
-</footer>
-
-<div style="background:red;color:white;padding:40px;text-align:center;">
-TESTE VISUAL
-<img 
-  src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Brazil_states_blank.svg/800px-Brazil_states_blank.svg.png" 
-  style="width:600px;height:auto;display:block;margin:30px auto;">
-
-    
 </body>
 </html>
+
 
 
 
