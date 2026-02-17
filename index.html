@@ -5,96 +5,137 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sene Advocacia e Consultoria</title>
 
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
 <style>
 body {
     margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f4f1ea;
-    color: #1f2a1f;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5f3ef;
+    color: #1a1a1a;
 }
 
 header {
-    background: #1c2b24;
-    padding: 25px 0;
+    background: #0f1c2e;
+    padding: 30px 0;
     text-align: center;
-    color: #d4af37;
+    color: #c6a85b;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
 }
 
 nav {
-    background: #23362d;
+    background: #13243a;
     text-align: center;
-    padding: 12px;
+    padding: 15px;
 }
 
 nav a {
-    color: #f4f1ea;
+    color: white;
     margin: 0 20px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d4af37;
+    color: #c6a85b;
 }
 
 section {
-    padding: 80px 12%;
+    padding: 90px 12%;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: 1s ease;
+}
+
+section.show {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 h2 {
-    color: #1c2b24;
-    border-bottom: 2px solid #d4af37;
+    font-family: 'Playfair Display', serif;
+    color: #0f1c2e;
+    border-bottom: 2px solid #c6a85b;
     display: inline-block;
-    padding-bottom: 5px;
+    padding-bottom: 6px;
 }
 
 .hero {
-    background: linear-gradient(rgba(28,43,36,0.85), rgba(28,43,36,0.85)),
-                url('https://images.unsplash.com/photo-1505666280368-04b30a3a6d0b');
+    background: linear-gradient(rgba(15,28,46,0.85), rgba(15,28,46,0.85)),
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
     background-size: cover;
     background-position: center;
-    color: #f4f1ea;
+    color: white;
     text-align: center;
-    padding: 140px 20px;
+    padding: 160px 20px;
+    opacity: 1;
+    transform: none;
 }
 
 .hero h1 {
-    color: #d4af37;
-    font-size: 38px;
+    font-size: 42px;
+    font-family: 'Playfair Display', serif;
+    color: #c6a85b;
 }
 
 .button {
-    background: #d4af37;
-    color: #1c2b24;
-    padding: 14px 28px;
+    background: #c6a85b;
+    color: #0f1c2e;
+    padding: 15px 30px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
+    font-weight: 600;
+    border-radius: 3px;
+    transition: 0.3s;
 }
 
 .button:hover {
-    background: #c19b2e;
+    background: #b69545;
 }
 
-.estados {
+.cards {
     display: flex;
     gap: 30px;
     margin-top: 40px;
 }
 
-.card-estado {
+.card {
     flex: 1;
     background: white;
-    padding: 30px;
-    border-left: 4px solid #d4af37;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 35px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    border-top: 3px solid #c6a85b;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 40px;
 }
 
 footer {
-    background: #1c2b24;
-    color: #f4f1ea;
+    background: #0f1c2e;
+    color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+    }
+
+    section {
+        padding: 70px 8%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
 }
 </style>
 </head>
@@ -111,88 +152,91 @@ footer {
 <a href="#sobre">Sobre</a>
 <a href="#especialidades">Especialidades</a>
 <a href="#presenca">Presença</a>
-<a href="#publicacoes">Publicações</a>
 <a href="#contato">Contato</a>
 </nav>
 
 <section class="hero" id="inicio">
 <h1>Atuação Jurídica Estratégica e Personalizada</h1>
-<p>Excelência técnica e planejamento jurídico com atuação estruturada e orientada a resultados.</p>
+<p>Atuação estruturada nos estados de Alagoas, Goiás e São Paulo com excelência técnica e visão institucional.</p>
 <br>
-<a class="button" href="https://wa.me/558298167803?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Fale pelo WhatsApp</a>
+<a class="button" href="https://wa.me/558298167803?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Agendar Consulta</a>
 </section>
 
 <section id="sobre">
 <h2>Sobre o Escritório</h2>
-
-<p><strong>Sene Advocacia e Consultoria</strong> atua de forma estratégica e personalizada nos estados de Alagoas, Goiás e São Paulo, oferecendo soluções jurídicas com excelência técnica, ética profissional e comprometimento institucional.</p>
-
-<p>O escritório é liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272, Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil, com formação complementar no Curso Integrado para Magistratura.</p>
-
-<p>Experiência consolidada em Residência Jurídica na Defensoria Pública do Estado de Alagoas – Núcleo de Segunda Instância, 17ª Vara da Fazenda Pública e 1º Juizado da Violência Doméstica e Familiar.</p>
+<p><strong>Sene Advocacia e Consultoria</strong> atua de forma estratégica e personalizada, oferecendo soluções jurídicas com excelência técnica, ética profissional e comprometimento institucional.</p>
+<p>Liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272, Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil.</p>
 </section>
 
 <section id="especialidades">
 <h2>Especialidades</h2>
-<ul>
-<li>Elaboração de Petições Estratégicas</li>
-<li>Recursos em Segunda Instância</li>
-<li>Planejamento Jurídico Processual</li>
-<li>Consultoria Jurídica Especializada</li>
-</ul>
+<div class="cards">
+<div class="card">
+<h3>Petições Estratégicas</h3>
+<p>Elaboração técnica fundamentada com foco em resultado e consistência argumentativa.</p>
+</div>
+
+<div class="card">
+<h3>Recursos</h3>
+<p>Atuação em segunda instância com estratégia jurídica estruturada.</p>
+</div>
+
+<div class="card">
+<h3>Consultoria</h3>
+<p>Planejamento jurídico preventivo e estratégico para mitigação de riscos.</p>
+</div>
+</div>
 </section>
 
 <section id="presenca">
 <h2>Presença Estratégica Nacional</h2>
+<p>Atuação estruturada nos seguintes estados:</p>
 
-<p>Atuação estruturada e estratégica nas seguintes unidades federativas:</p>
-
-<div class="estados">
-<div class="card-estado">
+<div class="cards">
+<div class="card">
 <h3>Alagoas</h3>
-<p>Atendimento jurídico com experiência prática junto à Defensoria Pública e órgãos jurisdicionais estaduais.</p>
+<p>Experiência junto à Defensoria Pública e órgãos jurisdicionais estaduais.</p>
 </div>
 
-<div class="card-estado">
+<div class="card">
 <h3>Goiás</h3>
-<p>Atuação técnica especializada com foco em estratégia processual e recursos em segunda instância.</p>
+<p>Atuação especializada em estratégia processual e recursos.</p>
 </div>
 
-<div class="card-estado">
+<div class="card">
 <h3>São Paulo</h3>
-<p>Presença institucional em Ribeirão Preto/SP, com atendimento consultivo e estratégico.</p>
+<p>Base institucional em Ribeirão Preto/SP com atendimento consultivo e estratégico.</p>
 </div>
 </div>
 
-</section>
-
-<section id="publicacoes">
-<h2>Publicações Acadêmicas</h2>
-
-<p><strong>A Importância do Planejamento Estratégico no Poder Judiciário para a Gestão da Razoável Duração do Processo</strong><br>
-Revista ESMAL – VII Enpejud – 2023</p>
-
-<p><strong>A Teoria da Perda de uma Chance</strong><br>
-TCC – Pós-Graduação em Direitos Fundamentais – Outubro/2023</p>
-
-<p><strong>Processos Estruturais: A Relevância do Instituto da Cooperação</strong><br>
-TCC – Pós-Graduação em Processo Civil – Abril/2024</p>
-
-<p><strong>Como o Instituto da Gratuidade Judiciária Pode Agravar o Excesso de Demandas</strong><br>
-AGO/2024</p>
-
+<div class="mapa">
+<img src="https://upload.wikimedia.org/wikipedia/commons/0/01/Brazil_location_map.svg" width="350">
+</div>
 </section>
 
 <section id="contato">
 <h2>Contato</h2>
-<p><strong>Localização:</strong> Ribeirão Preto/SP</p>
-<p><strong>WhatsApp:</strong> (82) 98167-803</p>
-<p><strong>Email:</strong> cscarneiro11@gmail.com</p>
+<p><strong>Ribeirão Preto/SP</strong></p>
+<p>WhatsApp: (82) 98167-803</p>
+<p>Email: cscarneiro11@gmail.com</p>
 </section>
 
 <footer>
 <p>© 2026 Sene Advocacia e Consultoria – Todos os direitos reservados.</p>
 </footer>
+
+<script>
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+    sections.forEach(sec => {
+        const top = sec.getBoundingClientRect().top;
+        if(top < window.innerHeight - 100){
+            sec.classList.add("show");
+        }
+    });
+});
+</script>
 
 </body>
 </html>
