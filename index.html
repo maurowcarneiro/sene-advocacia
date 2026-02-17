@@ -5,71 +5,96 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sene Advocacia e Consultoria</title>
 
-    
 <style>
 body {
     margin: 0;
     font-family: 'Georgia', serif;
     background-color: #f4f1ea;
-    color: #2f3e2f;
+    color: #1f2a1f;
 }
 
 header {
-    background: #2f4f3e;
-    padding: 20px 0;
+    background: #1c2b24;
+    padding: 25px 0;
     text-align: center;
-    color: #d2b48c;
+    color: #d4af37;
 }
 
 nav {
-    background: #3b5d4f;
+    background: #23362d;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
 }
 
 nav a {
     color: #f4f1ea;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     font-weight: bold;
 }
 
+nav a:hover {
+    color: #d4af37;
+}
+
 section {
-    padding: 60px 10%;
+    padding: 80px 12%;
 }
 
 h2 {
-    color: #2f4f3e;
-    border-bottom: 2px solid #d2b48c;
+    color: #1c2b24;
+    border-bottom: 2px solid #d4af37;
     display: inline-block;
     padding-bottom: 5px;
 }
 
 .hero {
-    background: #2f4f3e;
+    background: linear-gradient(rgba(28,43,36,0.85), rgba(28,43,36,0.85)),
+                url('https://images.unsplash.com/photo-1505666280368-04b30a3a6d0b');
+    background-size: cover;
+    background-position: center;
     color: #f4f1ea;
     text-align: center;
-    padding: 80px 20px;
+    padding: 140px 20px;
 }
 
 .hero h1 {
-    color: #d2b48c;
+    color: #d4af37;
+    font-size: 38px;
 }
 
 .button {
-    background: #d2b48c;
-    color: #2f4f3e;
-    padding: 12px 25px;
+    background: #d4af37;
+    color: #1c2b24;
+    padding: 14px 28px;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 4px;
+}
+
+.button:hover {
+    background: #c19b2e;
+}
+
+.estados {
+    display: flex;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.card-estado {
+    flex: 1;
+    background: white;
+    padding: 30px;
+    border-left: 4px solid #d4af37;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 footer {
-    background: #2f4f3e;
+    background: #1c2b24;
     color: #f4f1ea;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }
 </style>
 </head>
@@ -85,25 +110,26 @@ footer {
 <a href="#inicio">Início</a>
 <a href="#sobre">Sobre</a>
 <a href="#especialidades">Especialidades</a>
+<a href="#presenca">Presença</a>
 <a href="#publicacoes">Publicações</a>
 <a href="#contato">Contato</a>
 </nav>
 
 <section class="hero" id="inicio">
-<h1>Atuação Jurídica Estratégica</h1>
-<p>Especialização em elaboração de petições, recursos e planejamento estratégico processual.</p>
+<h1>Atuação Jurídica Estratégica e Personalizada</h1>
+<p>Excelência técnica e planejamento jurídico com atuação estruturada e orientada a resultados.</p>
 <br>
 <a class="button" href="https://wa.me/558298167803?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Fale pelo WhatsApp</a>
-    
 </section>
 
 <section id="sobre">
 <h2>Sobre o Escritório</h2>
-<p>Escritório de advogados associados liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272.</p>
 
-<p>Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil. Formação complementar no Curso Integrado para Magistratura.</p>
+<p><strong>Sene Advocacia e Consultoria</strong> atua de forma estratégica e personalizada nos estados de Alagoas, Goiás e São Paulo, oferecendo soluções jurídicas com excelência técnica, ética profissional e comprometimento institucional.</p>
 
-<p>Experiência em Residência Jurídica na Defensoria Pública do Estado de Alagoas – Núcleo de Segunda Instância, 17ª Vara da Fazenda Pública e 1º Juizado da Violência Doméstica e Familiar.</p>
+<p>O escritório é liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272, Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil, com formação complementar no Curso Integrado para Magistratura.</p>
+
+<p>Experiência consolidada em Residência Jurídica na Defensoria Pública do Estado de Alagoas – Núcleo de Segunda Instância, 17ª Vara da Fazenda Pública e 1º Juizado da Violência Doméstica e Familiar.</p>
 </section>
 
 <section id="especialidades">
@@ -114,6 +140,30 @@ footer {
 <li>Planejamento Jurídico Processual</li>
 <li>Consultoria Jurídica Especializada</li>
 </ul>
+</section>
+
+<section id="presenca">
+<h2>Presença Estratégica Nacional</h2>
+
+<p>Atuação estruturada e estratégica nas seguintes unidades federativas:</p>
+
+<div class="estados">
+<div class="card-estado">
+<h3>Alagoas</h3>
+<p>Atendimento jurídico com experiência prática junto à Defensoria Pública e órgãos jurisdicionais estaduais.</p>
+</div>
+
+<div class="card-estado">
+<h3>Goiás</h3>
+<p>Atuação técnica especializada com foco em estratégia processual e recursos em segunda instância.</p>
+</div>
+
+<div class="card-estado">
+<h3>São Paulo</h3>
+<p>Presença institucional em Ribeirão Preto/SP, com atendimento consultivo e estratégico.</p>
+</div>
+</div>
+
 </section>
 
 <section id="publicacoes">
