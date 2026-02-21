@@ -1,101 +1,179 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sene Advocacia e Consultoria</title>
+
+<title>Sene Advocacia e Consultoria | Advogada em Ribeirão Preto/SP</title>
+
+<meta name="description" content="Sene Advocacia e Consultoria. Atuação estratégica nos estados de São Paulo, Goiás e Alagoas. Excelência técnica, recursos em segunda instância e planejamento jurídico de alta performance.">
+
+<meta name="keywords" content="advogada Ribeirão Preto, advogada Goiás, advogada Alagoas, recursos segunda instância, petições estratégicas, consultoria jurídica">
+
+<meta property="og:title" content="Sene Advocacia e Consultoria">
+<meta property="og:description" content="Atuação jurídica estratégica em Alagoas, Goiás e São Paulo.">
+<meta property="og:type" content="website">
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "LegalService",
+ "name": "Sene Advocacia e Consultoria",
+ "areaServed": ["Alagoas", "Goiás", "São Paulo"],
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Ribeirão Preto",
+   "addressRegion": "SP",
+   "addressCountry": "BR"
+ },
+ "telephone": "+55-82-98167-803"
+}
+</script>
 
 <style>
+
 body {
     margin: 0;
-    font-family: 'Georgia', serif;
-    background-color: #f4f1ea;
-    color: #1f2a1f;
+    font-family: 'Inter', sans-serif;
+    background-color: #f4f2ee;
+    color: #1b1b1b;
 }
 
 header {
-    background: #1c2b24;
-    padding: 25px 0;
+    background: #0c1624;
+    padding: 35px 0;
     text-align: center;
-    color: #d4af37;
+    color: #c6a85b;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    letter-spacing: 1px;
+}
+
+.selo-oab {
+    margin-top: 15px;
+    display: inline-block;
+    padding: 8px 18px;
+    border: 1px solid #c6a85b;
+    font-size: 13px;
+    letter-spacing: 1px;
 }
 
 nav {
-    background: #23362d;
+    background: #0f1f34;
     text-align: center;
-    padding: 12px;
+    padding: 18px;
 }
 
 nav a {
-    color: #f4f1ea;
-    margin: 0 20px;
+    color: white;
+    margin: 0 25px;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 500;
+    transition: 0.3s;
 }
 
 nav a:hover {
-    color: #d4af37;
-}
-
-section {
-    padding: 80px 12%;
-}
-
-h2 {
-    color: #1c2b24;
-    border-bottom: 2px solid #d4af37;
-    display: inline-block;
-    padding-bottom: 5px;
+    color: #c6a85b;
 }
 
 .hero {
-    background: linear-gradient(rgba(28,43,36,0.85), rgba(28,43,36,0.85)),
-                url('https://images.unsplash.com/photo-1505666280368-04b30a3a6d0b');
+    background: linear-gradient(rgba(12,22,36,0.88), rgba(12,22,36,0.88)),
+                url('https://images.unsplash.com/photo-1589829545856-d10d557cf95f');
     background-size: cover;
     background-position: center;
-    color: #f4f1ea;
+    color: white;
     text-align: center;
-    padding: 140px 20px;
+    padding: 180px 20px;
 }
 
 .hero h1 {
-    color: #d4af37;
-    font-size: 38px;
+    font-family: 'Playfair Display', serif;
+    font-size: 46px;
+    color: #c6a85b;
 }
 
 .button {
-    background: #d4af37;
-    color: #1c2b24;
-    padding: 14px 28px;
+    background: #c6a85b;
+    color: #0c1624;
+    padding: 16px 32px;
     text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
+    font-weight: 600;
+    border-radius: 2px;
+    transition: 0.3s;
 }
 
-.button:hover {
-    background: #c19b2e;
+section {
+    padding: 110px 12%;
 }
 
-.estados {
+h2 {
+    font-family: 'Playfair Display', serif;
+    color: #0c1624;
+    border-bottom: 2px solid #c6a85b;
+    display: inline-block;
+    padding-bottom: 8px;
+}
+
+.cards {
     display: flex;
-    gap: 30px;
-    margin-top: 40px;
+    gap: 40px;
+    margin-top: 50px;
 }
 
-.card-estado {
+.card {
     flex: 1;
     background: white;
-    padding: 30px;
-    border-left: 4px solid #d4af37;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    padding: 40px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.08);
+    border-top: 3px solid #c6a85b;
+    transition: 0.4s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+
+.mapa {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.mapa svg {
+    max-width: 500px;
+}
+
+.estado {
+    fill: #d9d9d9;
+}
+
+.destaque {
+    fill: #c6a85b;
 }
 
 footer {
-    background: #1c2b24;
-    color: #f4f1ea;
+    background: #0c1624;
+    color: white;
     text-align: center;
-    padding: 25px;
+    padding: 40px;
 }
+
+@media (max-width: 900px) {
+    section {
+        padding: 80px 8%;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+}
+
 </style>
 </head>
 
@@ -104,90 +182,82 @@ footer {
 <header>
 <h1>Sene Advocacia e Consultoria</h1>
 <p>Excelência Técnica | Estratégia Jurídica | Alta Performance Processual</p>
+<div class="selo-oab">OAB/GO 76.272</div>
 </header>
 
 <nav>
 <a href="#inicio">Início</a>
 <a href="#sobre">Sobre</a>
-<a href="#especialidades">Especialidades</a>
-<a href="#presenca">Presença</a>
-<a href="#publicacoes">Publicações</a>
+<a href="#presenca">Presença Nacional</a>
 <a href="#contato">Contato</a>
 </nav>
 
 <section class="hero" id="inicio">
-<h1>Atuação Jurídica Estratégica e Personalizada</h1>
-<p>Excelência técnica e planejamento jurídico com atuação estruturada e orientada a resultados.</p>
+<h1>Atuação Jurídica Estratégica, Personalizada e de Alto Nível</h1>
+<p>Atuação estruturada nos estados de São Paulo, Goiás e Alagoas, oferecendo soluções jurídicas com excelência técnica, ética, comprometimento institucional e planejamento jurídico orientado a resultados.</p>
 <br>
-<a class="button" href="https://wa.me/558298167803?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Fale pelo WhatsApp</a>
+<a class="button" href="https://wa.me/558298167803">Agendar Consulta</a>
 </section>
 
 <section id="sobre">
 <h2>Sobre o Escritório</h2>
+<p>Sene Advocacia e Consultoria atua de forma estratégica e personalizada, com abordagem técnica aprofundada e planejamento processual orientado a resultados.</p>
 
-<p><strong>Sene Advocacia e Consultoria</strong> atua de forma estratégica e personalizada nos estados de Alagoas, Goiás e São Paulo, oferecendo soluções jurídicas com excelência técnica, ética profissional e comprometimento institucional.</p>
-
-<p>O escritório é liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272, Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil, com formação complementar no Curso Integrado para Magistratura.</p>
-
-<p>Experiência consolidada em Residência Jurídica na Defensoria Pública do Estado de Alagoas – Núcleo de Segunda Instância, 17ª Vara da Fazenda Pública e 1º Juizado da Violência Doméstica e Familiar.</p>
+<p>>O escritório é Liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272, Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil com formação complementar no Curso Integrado para Magistratura.</p>
+<p>Experiência consolidada:</p> 
+<p> Residência Jurídica na Defensoria Pública – Núcleo de Segunda Instância,</p>
+<p> 17ª Vara da Fazenda Pública,</p>
+<p> 1º Juizado da Violência Doméstica e Familiar.</p>
 </section>
 
 <section id="especialidades">
 <h2>Especialidades</h2>
+
 <ul>
 <li>Elaboração de Petições Estratégicas</li>
 <li>Recursos em Segunda Instância</li>
 <li>Planejamento Jurídico Processual</li>
 <li>Consultoria Jurídica Especializada</li>
 </ul>
+
+
+<div class="cards">
+<div class="card">
+<h3>Petições Estratégicas</h3>
+<p>Construção argumentativa sólida e técnica de alto nível.</p>
+</div>
+
+<div class="card">
+<h3>Recursos em Segunda Instância</h3>
+<p>Estratégia jurídica estruturada com foco em reversão e consistência.</p>
+</div>
+
+<div class="card">
+<h3>Consultoria Especializada</h3>
+<p>Planejamento preventivo e mitigação de riscos jurídicos.</p>
+</div>
+</div>
+
 </section>
 
 <section id="presenca">
 <h2>Presença Estratégica Nacional</h2>
 
-<p>Atuação estruturada e estratégica nas seguintes unidades federativas:</p>
-
-<div class="estados">
-<div class="card-estado">
-<h3>Alagoas</h3>
-<p>Atendimento jurídico com experiência prática junto à Defensoria Pública e órgãos jurisdicionais estaduais.</p>
+<div class="mapa">
+<svg viewBox="0 0 1000 1000">
+<path class="estado destaque" d="M540,420 L580,420 L590,460 L550,470 Z"/> <!-- GO -->
+<path class="estado destaque" d="M620,550 L660,550 L670,590 L630,600 Z"/> <!-- SP -->
+<path class="estado destaque" d="M780,350 L820,350 L830,390 L790,400 Z"/> <!-- AL -->
+</svg>
 </div>
-
-<div class="card-estado">
-<h3>Goiás</h3>
-<p>Atuação técnica especializada com foco em estratégia processual e recursos em segunda instância.</p>
-</div>
-
-<div class="card-estado">
-<h3>São Paulo</h3>
-<p>Presença institucional em Ribeirão Preto/SP, com atendimento consultivo e estratégico.</p>
-</div>
-</div>
-
-</section>
-
-<section id="publicacoes">
-<h2>Publicações Acadêmicas</h2>
-
-<p><strong>A Importância do Planejamento Estratégico no Poder Judiciário para a Gestão da Razoável Duração do Processo</strong><br>
-Revista ESMAL – VII Enpejud – 2023</p>
-
-<p><strong>A Teoria da Perda de uma Chance</strong><br>
-TCC – Pós-Graduação em Direitos Fundamentais – Outubro/2023</p>
-
-<p><strong>Processos Estruturais: A Relevância do Instituto da Cooperação</strong><br>
-TCC – Pós-Graduação em Processo Civil – Abril/2024</p>
-
-<p><strong>Como o Instituto da Gratuidade Judiciária Pode Agravar o Excesso de Demandas</strong><br>
-AGO/2024</p>
 
 </section>
 
 <section id="contato">
 <h2>Contato</h2>
-<p><strong>Localização:</strong> Ribeirão Preto/SP</p>
-<p><strong>WhatsApp:</strong> (82) 98167-803</p>
-<p><strong>Email:</strong> cscarneiro11@gmail.com</p>
+<p><strong>Ribeirão Preto/SP</strong></p>
+<p>WhatsApp: (82) 98167-803</p>
+<p>Email: cscarneiro11@gmail.com</p>
 </section>
 
 <footer>
@@ -196,5 +266,4 @@ AGO/2024</p>
 
 </body>
 </html>
-
 
