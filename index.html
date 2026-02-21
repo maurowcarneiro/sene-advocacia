@@ -1,284 +1,146 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>Advogada em Ribeirão Preto | Sene Advocacia & Consultoria</title>
-
-<meta name="description" content="Advogada em Ribeirão Preto com atuação nacional. Especialista em Direito Empresarial, Civil e Trabalhista. Atendimento estratégico e personalizado."/>
-<meta name="keywords" content="Advogada em Ribeirão Preto, Escritório de Advocacia Ribeirão Preto, Direito Empresarial Ribeirão Preto, Consultoria Jurídica"/>
-<meta name="author" content="Sene Advocacia & Consultoria"/>
-
-<!-- Open Graph -->
-<meta property="og:title" content="Sene Advocacia & Consultoria | Advogada em Ribeirão Preto"/>
-<meta property="og:description" content="Atuação estratégica com presença nacional e sede em Ribeirão Preto/SP."/>
-<meta property="og:type" content="website"/>
-
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
-
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sene Advocacia e Consultoria</title>
 <style>
-:root{
-  --bordo:#6e1a1a;
-  --bordo-escuro:#4d1010;
-  --dourado:#c6a85b;
-  --cinza-claro:#f6f4f2;
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    background-color: #f4f1ea;
+    color: #2f3e2f;
 }
 
-body{
-  margin:0;
-  font-family:'Inter',sans-serif;
-  color:#222;
-  line-height:1.7;
-  background:#fff;
+header {
+    background: #2f4f3e;
+    padding: 20px 0;
+    text-align: center;
+    color: #d2b48c;
 }
 
-header{
-  background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),
-  url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
-  background-size:cover;
-  background-position:center;
-  height:95vh;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  text-align:center;
-  color:#fff;
-  padding:20px;
+nav {
+    background: #3b5d4f;
+    text-align: center;
+    padding: 10px;
 }
 
-header h1{
-  font-family:'Playfair Display',serif;
-  font-size:3rem;
-  margin-bottom:15px;
+nav a {
+    color: #f4f1ea;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-header p{
-  max-width:650px;
-  margin:auto;
-  font-size:1.2rem;
+section {
+    padding: 60px 10%;
 }
 
-.lang-toggle{
-  position:absolute;
-  top:20px;
-  right:30px;
+h2 {
+    color: #2f4f3e;
+    border-bottom: 2px solid #d2b48c;
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
-.lang-toggle button{
-  background:transparent;
-  border:1px solid #fff;
-  color:#fff;
-  padding:6px 12px;
-  cursor:pointer;
-  font-size:0.85rem;
+.hero {
+    background: #2f4f3e;
+    color: #f4f1ea;
+    text-align: center;
+    padding: 80px 20px;
 }
 
-section{
-  padding:90px 20px;
+.hero h1 {
+    color: #d2b48c;
 }
 
-.container{
-  max-width:1100px;
-  margin:auto;
+.button {
+    background: #d2b48c;
+    color: #2f4f3e;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
 }
 
-h2{
-  font-family:'Playfair Display',serif;
-  font-size:2.3rem;
-  text-align:center;
-  margin-bottom:25px;
-  color:var(--bordo);
-}
-
-.intro p,
-.atuacao p{
-  max-width:850px;
-  margin:auto;
-  text-align:center;
-}
-
-.areas{
-  background:var(--cinza-claro);
-}
-
-.areas-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-  gap:35px;
-  margin-top:50px;
-}
-
-.area-box{
-  background:#fff;
-  padding:35px;
-  border-left:4px solid var(--bordo);
-  box-shadow:0 8px 25px rgba(0,0,0,0.06);
-  transition:0.3s;
-}
-
-.area-box:hover{
-  transform:translateY(-5px);
-}
-
-.area-box h3{
-  font-family:'Playfair Display',serif;
-  margin-top:0;
-  color:var(--bordo-escuro);
-}
-
-.selo-oab{
-  text-align:center;
-  margin-top:40px;
-  font-size:0.9rem;
-  color:#666;
-}
-
-footer{
-  background:#111;
-  color:#fff;
-  padding:50px 20px;
-  text-align:center;
-}
-
-footer strong{
-  color:var(--dourado);
-}
-
-/* WhatsApp elegante */
-.whatsapp{
-  position:fixed;
-  bottom:25px;
-  right:25px;
-  background:var(--bordo);
-  width:55px;
-  height:55px;
-  border-radius:50%;
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  color:#fff;
-  font-size:24px;
-  text-decoration:none;
-  box-shadow:0 8px 20px rgba(0,0,0,0.2);
-  transition:0.3s;
-}
-
-.whatsapp:hover{
-  background:var(--bordo-escuro);
-}
-
-/* Mobile premium */
-@media(max-width:768px){
-  header h1{font-size:2.2rem;}
-  section{padding:70px 20px;}
+footer {
+    background: #2f4f3e;
+    color: #f4f1ea;
+    text-align: center;
+    padding: 20px;
 }
 </style>
 </head>
 
 <body>
 
-<div class="lang-toggle">
-  <button onclick="toggleLang()">EN</button>
-</div>
-
 <header>
-  <div>
-    <h1>Sene Advocacia & Consultoria</h1>
-    <p id="hero-text">
-      Advogada em Ribeirão Preto com atuação nacional,
-      oferecendo soluções jurídicas estratégicas e personalizadas.
-    </p>
-  </div>
+<h1>Sene Advocacia e Consultoria</h1>
+<p>Excelência Técnica | Estratégia Jurídica | Alta Performance Processual</p>
 </header>
 
-<section class="intro">
-<div class="container">
-<h2>O Escritório</h2>
-<p>
-Com sede em Ribeirão Preto/SP, atuamos de forma estratégica e ética,
-prestando assessoria jurídica empresarial, civil e trabalhista
-com foco em segurança, planejamento e resultado.
-</p>
-</div>
+<nav>
+<a href="#inicio">Início</a>
+<a href="#sobre">Sobre</a>
+<a href="#especialidades">Especialidades</a>
+<a href="#publicacoes">Publicações</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<section class="hero" id="inicio">
+<h1>Atuação Jurídica Estratégica</h1>
+<p>Especialização em elaboração de petições, recursos e planejamento estratégico processual.</p>
+<br>
+<a class="button" href="https://wa.me/558298167803">Fale pelo WhatsApp</a>
 </section>
 
-<section class="areas">
-<div class="container">
-<h2>Áreas de Atuação</h2>
-<div class="areas-grid">
-<div class="area-box">
-<h3>Direito Empresarial</h3>
-<p>Estruturação societária, contratos e consultoria estratégica.</p>
-</div>
-<div class="area-box">
-<h3>Direito Civil</h3>
-<p>Responsabilidade civil, contratos e demandas judiciais.</p>
-</div>
-<div class="area-box">
-<h3>Direito Trabalhista</h3>
-<p>Consultoria preventiva e contencioso estratégico.</p>
-</div>
-<div class="area-box">
-<h3>Consultoria Jurídica</h3>
-<p>Acompanhamento contínuo para decisões seguras.</p>
-</div>
-</div>
+<section id="sobre">
+<h2>Sobre o Escritório</h2>
+<p>Escritório de advogados associados liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272.</p>
 
-<div class="selo-oab">
-Inscrita na OAB/SP • Atendimento em todo o Brasil
-</div>
+<p>Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil. Formação complementar no Curso Integrado para Magistratura.</p>
 
-</div>
+<p>Experiência em Residência Jurídica na Defensoria Pública do Estado de Alagoas – Núcleo de Segunda Instância, 17ª Vara da Fazenda Pública e 1º Juizado da Violência Doméstica e Familiar.</p>
 </section>
 
-<section class="atuacao">
-<div class="container">
-<h2>Atuação Nacional</h2>
-<p>
-Com presença consolidada em São Paulo, Goiás e Alagoas,
-atendemos clientes em todo o território nacional
-por meio de estratégia, tecnologia e excelência jurídica.
-</p>
-</div>
+<section id="especialidades">
+<h2>Especialidades</h2>
+<ul>
+<li>Elaboração de Petições Estratégicas</li>
+<li>Recursos em Segunda Instância</li>
+<li>Planejamento Jurídico Processual</li>
+<li>Consultoria Jurídica Especializada</li>
+</ul>
+</section>
+
+<section id="publicacoes">
+<h2>Publicações Acadêmicas</h2>
+
+<p><strong>A Importância do Planejamento Estratégico no Poder Judiciário para a Gestão da Razoável Duração do Processo</strong><br>
+Revista ESMAL – VII Enpejud – 2023</p>
+
+<p><strong>A Teoria da Perda de uma Chance</strong><br>
+TCC – Pós-Graduação em Direitos Fundamentais – Outubro/2023</p>
+
+<p><strong>Processos Estruturais: A Relevância do Instituto da Cooperação</strong><br>
+TCC – Pós-Graduação em Processo Civil – Abril/2024</p>
+
+<p><strong>Como o Instituto da Gratuidade Judiciária Pode Agravar o Excesso de Demandas</strong><br>
+AGO/2024</p>
+
+</section>
+
+<section id="contato">
+<h2>Contato</h2>
+<p><strong>Localização:</strong> Ribeirão Preto/SP</p>
+<p><strong>WhatsApp:</strong> (82) 98167-803</p>
+<p><strong>Email:</strong> cscarneiro11@gmail.com</p>
 </section>
 
 <footer>
-<p><strong>Sene Advocacia & Consultoria</strong></p>
-<p>Advogada em Ribeirão Preto • Atendimento Nacional</p>
-<p>© 2026 — Todos os direitos reservados</p>
+<p>© 2026 Sene Advocacia e Consultoria – Todos os direitos reservados.</p>
 </footer>
-
-<!-- WhatsApp -->
-<a href="https://wa.me/5582981671803" class="whatsapp" target="_blank">✆</a>
-
-<script>
-function toggleLang(){
-  const text = document.getElementById("hero-text");
-  if(text.innerHTML.includes("Advogada")){
-    text.innerHTML="Law firm based in Ribeirão Preto, Brazil, with nationwide strategic legal services.";
-  } else{
-    text.innerHTML="Advogada em Ribeirão Preto com atuação nacional, oferecendo soluções jurídicas estratégicas e personalizadas.";
-  }
-}
-</script>
-
-<!-- Schema Markup -->
-<script type="application/ld+json">
-{
- "@context":"https://schema.org",
- "@type":"LegalService",
- "name":"Sene Advocacia & Consultoria",
- "areaServed":"BR",
- "address":{
-   "@type":"PostalAddress",
-   "addressLocality":"Ribeirão Preto",
-   "addressRegion":"SP",
-   "addressCountry":"BR"
- }
-}
-</script>
 
 </body>
 </html>
+
