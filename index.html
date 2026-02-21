@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Sene Advocacia e Consultoria | Advogada em Ribeirão Preto/SP</title>
+<title>Advogada em Ribeirão Preto | Sene Advocacia e Consultoria</title>
 
-<meta name="description" content="Sene Advocacia e Consultoria. Atuação estratégica nos estados de São Paulo, Goiás e Alagoas. Excelência técnica, recursos em segunda instância e planejamento jurídico de alta performance.">
+<meta name="description" content="Advogada em Ribeirão Preto/SP. Escritório de advocacia com atuação estratégica nos estados de São Paulo, Goiás e Alagoas. Especialização em recursos em segunda instância, petições estratégicas e consultoria jurídica personalizada.">
 
-<meta name="keywords" content="advogada Ribeirão Preto, advogada Goiás, advogada Alagoas, recursos segunda instância, petições estratégicas, consultoria jurídica">
+<meta name="keywords" content="Advogada em Ribeirão Preto, Escritório de Advocacia Ribeirão Preto, Recursos Segunda Instância, Petições Estratégicas, Advocacia São Paulo, Advocacia Goiás, Advocacia Alagoas">
 
-<meta property="og:title" content="Sene Advocacia e Consultoria">
-<meta property="og:description" content="Atuação jurídica estratégica em Alagoas, Goiás e São Paulo.">
-<meta property="og:type" content="website">
+<meta name="author" content="Sene Advocacia e Consultoria">
+<meta name="robots" content="index, follow">
+<meta name="geo.region" content="BR-SP">
+<meta name="geo.placename" content="Ribeirão Preto">
+<link rel="canonical" href="https://www.seusite.com.br/">
 
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
+<!-- Open Graph -->
+<meta property="og:title" content="Advogada em Ribeirão Preto | Sene Advocacia">
+<meta property="og:description" content="Escritório de advocacia em Ribeirão Preto/SP com atuação estratégica em SP, GO e AL.">
+<meta property="og:type" content="website">
+
+<!-- Schema para Google -->
 <script type="application/ld+json">
 {
  "@context": "https://schema.org",
  "@type": "LegalService",
  "name": "Sene Advocacia e Consultoria",
- "areaServed": ["Alagoas", "Goiás", "São Paulo"],
  "address": {
    "@type": "PostalAddress",
    "addressLocality": "Ribeirão Preto",
    "addressRegion": "SP",
    "addressCountry": "BR"
  },
+ "areaServed": ["São Paulo","Goiás","Alagoas"],
+ "description": "Escritório de advocacia em Ribeirão Preto/SP com atuação estratégica nos estados de São Paulo, Goiás e Alagoas.",
  "telephone": "+55-82-98167-803"
 }
 </script>
@@ -42,9 +50,10 @@ body {
     color: #1b1b1b;
 }
 
+/* HEADER PREMIUM */
 header {
     background: #0c1624;
-    padding: 35px 0;
+    padding: 40px 0 30px 0;
     text-align: center;
     color: #c6a85b;
 }
@@ -53,14 +62,25 @@ header h1 {
     font-family: 'Playfair Display', serif;
     margin: 0;
     letter-spacing: 1px;
+    font-size: 32px;
 }
 
-.selo-oab {
+.oab-destaque {
     margin-top: 15px;
     display: inline-block;
-    padding: 8px 18px;
+    padding: 8px 22px;
     border: 1px solid #c6a85b;
+    color: #c6a85b;
     font-size: 13px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+header p {
+    margin-top: 15px;
+    color: #d4c7a1;
+    font-size: 14px;
     letter-spacing: 1px;
 }
 
@@ -98,6 +118,12 @@ nav a:hover {
     color: #c6a85b;
 }
 
+.hero p {
+    max-width: 700px;
+    margin: 20px auto;
+    font-size: 18px;
+}
+
 .button {
     background: #c6a85b;
     color: #0c1624;
@@ -108,12 +134,17 @@ nav a:hover {
     transition: 0.3s;
 }
 
+.button:hover {
+    background: #b69445;
+}
+
 section {
     padding: 110px 12%;
 }
 
 h2 {
     font-family: 'Playfair Display', serif;
+    font-size: 30px;
     color: #0c1624;
     border-bottom: 2px solid #c6a85b;
     display: inline-block;
@@ -139,14 +170,14 @@ h2 {
     transform: translateY(-8px);
 }
 
-
+/* MAPA */
 .mapa {
+    margin-top: 60px;
     text-align: center;
-    margin-top: 50px;
 }
 
 .mapa svg {
-    max-width: 500px;
+    max-width: 400px;
 }
 
 .estado {
@@ -165,12 +196,14 @@ footer {
 }
 
 @media (max-width: 900px) {
+    .cards {
+        flex-direction: column;
+    }
     section {
         padding: 80px 8%;
     }
-
     .hero h1 {
-        font-size: 30px;
+        font-size: 32px;
     }
 }
 
@@ -181,112 +214,83 @@ footer {
 
 <header>
 <h1>Sene Advocacia e Consultoria</h1>
+<div class="oab-destaque">OAB/GO 76.272 • Advocacia Nacional</div>
 <p>Excelência Técnica | Estratégia Jurídica | Alta Performance Processual</p>
-<div class="selo-oab">OAB/GO 76.272 • Atuação Nacional</div>
 </header>
 
 <nav>
 <a href="#inicio">Início</a>
 <a href="#sobre">Sobre</a>
-<a href="#experiência">Experiência</a>
 <a href="#especialidades">Especialidades</a>
 <a href="#presenca">Presença Nacional</a>
+<a href="#seo-local">Advogada em Ribeirão Preto</a>
 <a href="#contato">Contato</a>
 </nav>
 
 <section class="hero" id="inicio">
-<h1>Atuação Jurídica Estratégica, Personalizada e de Alto Nível</h1>
-<p>Atuação estruturada nos estados de São Paulo, Goiás e Alagoas, oferecendo soluções jurídicas com excelência técnica, ética, comprometimento institucional e planejamento jurídico orientado a resultados.</p>
+<h1>Advogada em Ribeirão Preto com Atuação Estratégica Nacional</h1>
+<p>Atuação estruturada nos estados de Alagoas, Goiás e São Paulo, oferecendo soluções jurídicas com excelência técnica e comprometimento institucional.</p>
 <br>
-<a class="button" href="https://wa.me/558298167803">Agendar Consulta</a>
+<a class="button" href="https://wa.me/558298167803?text=Olá,%20gostaria%20de%20agendar%20uma%20consulta.">Agendar Consulta</a>
 </section>
 
 <section id="sobre">
 <h2>Sobre o Escritório</h2>
 <p>Sene Advocacia e Consultoria atua de forma estratégica e personalizada, com abordagem técnica aprofundada e planejamento processual orientado a resultados.</p>
-
-<p>O escritório é Liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272, Pós-Graduada em Direito Penal e Processual Penal, Direitos Fundamentais e Processo Civil com formação complementar no Curso Integrado para Magistratura.</p>
-</section>
-
-<section id="experiência">
-<h2>Experiência consolidada:</h2>
-
-<div class="cards">
-<div class="card">
-<h3>Residência Jurídica na Defensoria Pública – Núcleo de Segunda Instância</h3>
-<p>Atuação estratégica na elaboração de recursos, análise de decisões judiciais e desenvolvimento de teses recursais perante Tribunais.</p>
-</div>
-
-<div class="card">
-<h3>Residência Jurídica na 17ª Vara da Fazenda Pública</h3>
-<p>Atuação estratégica em demandas envolvendo o Poder Público, com análise processual, elaboração de minutas e apoio na fundamentação de decisões.</p>
-</div>
-
-<div class="card">
-<h3>Residência Jurídica no 1º Juizado da Violência Doméstica e Familiar</h3>
-<p>Atuação estratégica na análise processual, elaboração de minutas e apoio técnico em demandas relacionadas à violência doméstica, com foco na proteção de direitos e na efetividade das medidas legais.</p>
-</div>
-</div>
+<p>Liderado por Dra. Cristiane Souto Carneiro – OAB/GO 76.272.</p>
 </section>
 
 <section id="especialidades">
 <h2>Especialidades</h2>
 
-<ul>
-<li>Elaboração de Petições Estratégicas</li>
-<li>Recursos em Segunda Instância</li>
-<li>Planejamento Jurídico Processual</li>
-<li>Consultoria Jurídica Especializada</li>
-</ul>
-
-
 <div class="cards">
 <div class="card">
 <h3>Petições Estratégicas</h3>
-<p>Construção argumentativa sólida e técnica de alto nível, fundamentadas para sustentar decisões favoráveis e proteger os interesses de nossos clientes.</p>
+<p>Construção argumentativa sólida e técnica de alto nível.</p>
 </div>
 
 <div class="card">
 <h3>Recursos em Segunda Instância</h3>
 <p>Estratégia jurídica estruturada com foco em reversão e consistência.</p>
 </div>
-</div>
-
-<div class="cards">
-<div class="card">
-<h3>Planejamento Jurídico Processual</h3>
-<p>Planejamento preventivo e mitigação de riscos jurídicos.</p>
-</div>
 
 <div class="card">
 <h3>Consultoria Especializada</h3>
-<p>Inteligência jurídica aplicada à tomada de decisões, com segurança técnica, precisão analítica e foco em resultados sustentáveis.</p>
+<p>Planejamento preventivo e mitigação de riscos jurídicos.</p>
 </div>
 </div>
-
 </section>
 
 <section id="presenca">
 <h2>Presença Estratégica Nacional</h2>
-<p>Atuação institucional consolidada e estruturada nos seguintes estados:</p>
+<p>Atuação institucional consolidada nos seguintes estados:</p>
 
 <div class="cards">
-<div class="card">
-<h3>São Paulo</h3>
-<p>Base institucional em Ribeirão Preto/SP com atendimento consultivo e estratégico.</p>
+<div class="card"><h3>Alagoas</h3></div>
+<div class="card"><h3>Goiás</h3></div>
+<div class="card"><h3>São Paulo</h3></div>
 </div>
 
-<div class="card">
-<h3>Goiás</h3>
-<p>Atuação especializada em estratégia processual e recursos.</p>
+<div class="mapa">
+<svg viewBox="0 0 600 600">
+<path class="estado destaque" d="M350,250 L390,250 L400,280 L360,290 Z" />
+<path class="estado destaque" d="M450,320 L480,320 L490,350 L460,360 Z" />
+<path class="estado destaque" d="M520,200 L550,200 L560,230 L530,240 Z" />
+</svg>
 </div>
+</section>
 
-<div class="card">
-<h3>Alagoas</h3>
-<p>Experiência junto à Defensoria Pública e órgãos jurisdicionais estaduais.</p>
-</div>
-</div>
+<section id="seo-local">
+<h2>Advogada em Ribeirão Preto/SP</h2>
 
+<p><strong>Sene Advocacia e Consultoria</strong> é escritório de advocacia em Ribeirão Preto/SP 
+com atuação estratégica nos estados de São Paulo, Goiás e Alagoas.</p>
+
+<p>Especialização em recursos em segunda instância, petições estratégicas e planejamento jurídico de alta performance, 
+com atendimento personalizado e atuação técnica aprofundada.</p>
+
+<p>Se você busca <strong>advogada em Ribeirão Preto</strong> com atuação técnica estruturada e estratégia jurídica diferenciada, 
+o escritório oferece suporte jurídico de alto nível com atendimento personalizado.</p>
 </section>
 
 <section id="contato">
@@ -302,6 +306,8 @@ footer {
 
 </body>
 </html>
+
+
 
 
 
