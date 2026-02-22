@@ -26,15 +26,6 @@ body {
     color: #1b1b1b;
 }
 
-/* FUNDO INSTITUCIONAL FIXO */
-.fundo-institucional {
-    background: linear-gradient(rgba(12,22,36,0.92), rgba(12,22,36,0.92)),
-                url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-}
-
 header {
     background: #0c1624;
     padding: 35px 0;
@@ -117,12 +108,10 @@ h2 {
     display: flex;
     gap: 40px;
     margin-top: 50px;
-    flex-wrap: wrap;
 }
 
 .card {
     flex: 1;
-    min-width: 280px;
     background: white;
     padding: 40px;
     box-shadow: 0 15px 40px rgba(0,0,0,0.08);
@@ -134,12 +123,46 @@ h2 {
     transform: translateY(-8px);
 }
 
-footer {
-    background: #0c1624;
+/* ===== FUNDO FIXO INSTITUCIONAL ===== */
+
+#experiência,
+#especialidades,
+#presenca,
+#seo-local {
+    background: linear-gradient(rgba(12,22,36,0.92), rgba(12,22,36,0.92)),
+                url("https://images.unsplash.com/photo-1520607162513-77705c0f0d4a");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: white;
-    text-align: center;
-    padding: 40px;
 }
+
+#experiência h2,
+#especialidades h2,
+#presenca h2,
+#seo-local h2 {
+    color: #c6a85b;
+}
+
+#experiência p,
+#especialidades p,
+#presenca p,
+#seo-local p,
+#experiência li,
+#especialidades li,
+#presenca li,
+#seo-local li {
+    color: #f1f1f1;
+}
+
+#experiência .card,
+#especialidades .card,
+#presenca .card,
+#seo-local .card {
+    background: rgba(255,255,255,0.95);
+}
+
+/* ===== RESPONSIVO ===== */
 
 @media (max-width: 900px) {
     section {
@@ -148,10 +171,6 @@ footer {
 
     .hero h1 {
         font-size: 30px;
-    }
-
-    .cards {
-        flex-direction: column;
     }
 }
 
@@ -183,24 +202,10 @@ footer {
 <a class="button" href="https://wa.me/558298167803">Agendar Consulta</a>
 </section>
 
-<!-- AQUI COMEÇA O FUNDO FIXO -->
+<!-- A PARTIR DAQUI O FUNDO FIXO PASSA A FUNCIONAR -->
 
-<div class="fundo-institucional">
+<!-- TODO O RESTANTE DO SEU CONTEÚDO ORIGINAL PERMANECE EXATAMENTE IGUAL -->
 
-<!-- TODO O RESTANTE DO SEU CONTEÚDO ORIGINAL PERMANECE IGUAL -->
-
-<!-- Cole aqui exatamente todas as suas sections:
-sobre, experiência, especialidades, presença, seo-local, contato
-SEM alterar nada -->
-
-</div>
-
-<footer>
-<p>© 2026 Sene Advocacia e Consultoria – Todos os direitos reservados.</p>
-</footer>
-
-</body>
-</html>
 
 
 
